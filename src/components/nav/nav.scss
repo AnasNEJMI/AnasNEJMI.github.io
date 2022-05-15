@@ -1,0 +1,58 @@
+.app__header{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+    background: white;
+    border: 1px solid rgba($color: #ffffff, $alpha: 0.18);
+    z-index: 2;
+    padding-right: 2rem;
+    padding-left: 6rem;
+}
+
+.app__header-spacer{
+    flex: 1;
+}
+
+.app__header-logo{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //border-block: 3px solid blue;
+    color: rgb(47, 47, 47);
+    margin-left: 2rem;
+    gap: 1rem;
+    img{
+        width: 110px;
+
+        @media screen and (min-width : 2000px) {
+            width: 90px;
+        }
+    }
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    background: #fff;
+    margin-top: 60px;
+  }
+
+  .app__nav_spacer{
+      width: 3px;
+      height: 30px;
+      margin-right: 2rem;
+      margin-left: 2rem;
+
+      background-color: grey;
+
+      @media screen and (max-width: 1300px) {
+          display: none;
+      }
+  }
+

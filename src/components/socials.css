@@ -1,0 +1,6 @@
+.app__nav-socials{
+    height: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}

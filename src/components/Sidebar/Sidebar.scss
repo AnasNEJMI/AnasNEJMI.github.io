@@ -1,0 +1,94 @@
+.app__sidebar{
+    position: fixed;
+    width : 100%;
+    height: 100vh;
+    right : 0;
+    left: 0;
+    margin-top: 100px;
+    z-index: 1;
+    background: rgba($color: #ffffff, $alpha: 0.8);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba($color: #ffffff, $alpha: 0.18);
+
+    margin-right: 3rem;
+
+    @media screen and (min-width: 1200px){
+        display: none;
+    }
+}
+
+.app__sidebar-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    //border-block: 3px solid blue;
+    gap: 2rem;
+    margin: 2rem;
+    width: 100%;
+
+
+    li{
+        width: 100%;
+        //border-block: 3px solid red;
+        cursor: pointer;
+        list-style: none;
+        a{
+            color: gray; 
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        &:hover{
+            a{
+                color: black;
+            }
+        }
+    }
+}
+
+.app__sidebar-socials{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+
+.app__sidebar-social{
+    list-style: none;
+    cursor: pointer;
+}
+
+.sidebar-fb-icon{
+    transition: all 0.3s ease-in-out;  
+    color: rgb(29, 120, 195);
+    &:hover{
+        color: rgb(2, 56, 164);
+    }
+}
+
+.sidebar-insta-icon{
+    transition: all 0.3s ease-in-out;  
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#008be2+0,00d7ef+100 */
+    color: #f58529; /* Old browsers */
+    //color: -moz-linear-gradient(top, #f58529 0%, #feda77 22%, #dd2a7b 49%, #8134af 76%, #515bd4 100%); /* FF3.6-15 */
+    //color: -webkit-linear-gradient(top, #f58529 0%,#feda77 22%,#dd2a7b 49%,#8134af 76%,#515bd4 100%); /* Chrome10-25,Safari5.1-6 */
+    //color: linear-gradient(to bottom, #f58529 0%,#feda77 22%,#dd2a7b 49%,#8134af 76%,#515bd4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    //color: linear-gradient(to right, #fdec00 0%, #a50000 100%);
+    &:hover{
+        color: rgb(164, 2, 148);
+    }
+}
+
+.sidebar-yb-icon{
+    transition: all 0.3s ease-in-out;  
+    color: #e41818;
+    &:hover{
+        color: #a80505;
+    }
+}

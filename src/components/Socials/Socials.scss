@@ -1,0 +1,42 @@
+.app__header-socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-right: 5rem;
+
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+}
+
+.sidebar-fb-icon{
+    transition: all 0.3s ease-in-out;  
+    color: rgb(29, 120, 195);
+    &:hover{
+        color: rgb(2, 56, 164);
+    }
+}
+
+.sidebar-insta-icon{
+    transition: all 0.3s ease-in-out;  
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#008be2+0,00d7ef+100 */
+    color: #f58529; /* Old browsers */
+    //color: -moz-linear-gradient(top, #f58529 0%, #feda77 22%, #dd2a7b 49%, #8134af 76%, #515bd4 100%); /* FF3.6-15 */
+    //color: -webkit-linear-gradient(top, #f58529 0%,#feda77 22%,#dd2a7b 49%,#8134af 76%,#515bd4 100%); /* Chrome10-25,Safari5.1-6 */
+    //color: linear-gradient(to bottom, #f58529 0%,#feda77 22%,#dd2a7b 49%,#8134af 76%,#515bd4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    //color: linear-gradient(to right, #fdec00 0%, #a50000 100%);
+    &:hover{
+        color: rgb(164, 2, 148);
+    }
+}
+
+.sidebar-yb-icon{
+    transition: all 0.3s ease-in-out;  
+    color: #e41818;
+    &:hover{
+        color: #a80505;
+    }
+}
+
